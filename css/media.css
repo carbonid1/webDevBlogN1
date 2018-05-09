@@ -66,5 +66,24 @@
     right: -15px;
   }
 
+  /*THE SECOND BLOCK*/
+  .top-slide {
+    background-size: 768px 100%;
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
 
+  .top-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .top-slide h2 {
+    font-size: 40px;
+  }
+
+  .top-slide p {
+    font-size: 20px;
+  }
+  /*_/THE SECOND BLOCK*/
 }
