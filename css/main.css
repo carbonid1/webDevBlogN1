@@ -141,7 +141,7 @@ ul {
 }
 
 .top-card {
-  width: 200px;
+  width: 210px;
   height: 180px;
   background-color: #ffea00;
   display: -moz-flex;
@@ -151,15 +151,14 @@ ul {
   -moz-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   -ms-align-items: center;
   align-items: center;
   position: relative;
 }
 
 .top-card p {
-  position: absolute;
-  bottom: -7px;
+  margin: 25px 0 5px;
   font-size: 15px;
 }
 
@@ -173,3 +172,236 @@ ul {
   margin: 0;
 }
 /*_/THE THIRD BLOCK*/
+
+/*THE FOURTH BLOCK*/
+.portfolio {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portfolio h4,
+.brand-slider h4 {
+  background-color: #424147;
+  display: inline-block;
+  padding: 0px 20px;
+  color: #f5e10c;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.portfolio p,
+.brand-slider p {
+  color: #414146;
+  font-size: 16px;
+}
+
+.toggles button {
+  border: 1px solid #414146;
+  padding: 5px;
+  color: #414146;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 10px;
+  background: none;
+  position: relative;
+}
+
+.toggles button:hover {
+  border-color: #d4d4d8;
+}
+
+.toggles button:nth-child(-n + 3):after {
+  content: "*";
+  position: absolute;
+  right: -15px;
+}
+
+.toggles button:focus {
+  outline: none;
+  border-width: 3px;
+}
+
+.posts {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.post img {
+  width: 100%;
+}
+/*_/THE FOURTH BLOCK*/
+
+/*THE FIFTH BLOCK*/
+.brand-slider {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.brand-slider h4 {
+  margin-top: 30px;
+}
+
+.brand-slider p {
+  margin-bottom: 20px;
+}
+
+.owl-nav {
+  background-color: #000;
+  color: #fff;
+}
+
+/*_/THE FIFTH BLOCK*/
+
+/*  FOOTER*/
+footer {
+  background-color: #414146;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 32% 22%;
+    grid-template-columns: 40% 32% 22%;
+  grid-gap: 3%;
+}
+
+.footer-container h4 {
+  font-size: 16px;
+}
+
+footer .about-us p {
+  font-size: 13px;
+  margin: 30px 0;
+}
+
+.footer-container a.learMore {
+  background-color: #000;
+  border-bottom: 2px solid #ffea00;
+  color: #fff;
+  padding: 10px 14px;
+  display: inline-block;
+}
+
+footer .about-us .streamHeader{
+  margin: 45px 0 25px 0;
+}
+
+.footerImages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+.tweets .tweet {
+  margin: 30px 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tweets p {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.tweets img {
+  margin-right: 15px;
+  width: 26px;
+  height: 22px;
+}
+
+.tweet-text-container{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.tweet-text-container p:nth-of-type(2) {
+  margin-top: 7px;
+  font-size: 8px;
+  color: #ffea00;
+}
+
+.tweets span {
+  color: #ffeb00;
+}
+
+.social-connecting {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.social-connecting h4 {
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+.social-connecting a {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  margin-right: 2px;
+}
+
+.social-connecting .bg-facebook {
+  background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.social-connecting .bg-google_plus {
+  background: url('../img/css_sprites.png') -60px -10px;
+}
+
+.social-connecting .bg-twitter {
+  background: url('../img/css_sprites.png') -10px -60px;
+}
+
+.social-connecting .bg-linkedin {
+  background: url('../img/css_sprites.png') -60px -60px;
+}
+
+.social-connecting .bg-you_tube {
+  background: url('../img/css_sprites.png') -110px -10px;
+}
+
+.social-connecting .bg-bloger {
+  background: url('../img/css_sprites.png') -110px -60px;
+}
+
+.social-connecting .bg-rss {
+  background: url('../img/css_sprites.png') -10px -110px;
+}
+
+.social-connecting .bg-dribbble {
+  background: url('../img/css_sprites.png') -60px -110px;
+}
+
+
+/*_/FOOTER*/
