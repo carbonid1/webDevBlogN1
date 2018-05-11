@@ -19,6 +19,29 @@
   .top-card {
     width: 170px;
   }
+
+  footer {
+    font-size: 11px;
+  }
+
+  .tweets .tweet {
+    margin: 20px 0;
+  }
+
+  .social-connecting {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .social-connecting h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -151,14 +174,14 @@
 
   /*THE THIRD BLOCK*/
   .specialize-cards {
-    -moz-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .card {
     margin-top: 30px;
+    margin-right: 30px;
     width: 200px;
   }
 
@@ -196,9 +219,50 @@
     font-size: 13px;
   }
   /*_/THE THIRD BLOCK*/
+
+  /*  FOOTER*/
+  footer {
+    font-size: 13px;
+  }
+
+  .footer-container {
+    -ms-grid-columns: 48% auto;
+    grid-template-columns: 60% auto;
+    grid-gap: 50px;
+  }
+
+  .tweets .tweet {
+    margin: 15px 0;
+  }
+
+  .footer-contacts.span-col-2 {
+    grid-column: span 2 / auto;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    flex-basis: 60%;
+    flex-grow: 1;
+  }
+
+  .follow-us {
+    flex-basis: 30%;
+  }
+
+  .follow-us h4 {
+    margin-top: 0;
+  }
+  /*_/FOOTER*/
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 750px) {
   .specialize-container h3 {
     font-size: 25px;
   }
@@ -207,7 +271,79 @@
     font-size: 16px;
   }
 
+  .specialize-cards {
+    margin-top: 30px;
+  }
+
+  .card {
+    margin-right: 30px;
+  }
+
   .bottom-card p {
     font-size: 11px;
+  }
+
+  .portfolio h4 {
+    margin-bottom: 20px;
+  }
+
+  .portfolio p {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  .posts {
+    margin-top: 20px;
+  }
+
+  .toggles button {
+    display: inline-block;
+    margin: 5px auto;
+    font-size: 8px;
+    width: 130px;
+  }
+
+  .toggles button:nth-child(-n + 3):after {
+    content: "";
+  }
+
+  footer {
+    font-size: 11px;
+  }
+
+  .footer-container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .tweets,
+  .footer-contacts {
+    margin-top: 40px;
+  }
+
+  .contact-info {
+    flex-basis: 50%;
+  }
+
+  .follow-us {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 40%;
+    margin-left: 40px;
+  }
+
+  .footer-menu a {
+    font-size: 9px;
   }
 }

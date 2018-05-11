@@ -13,19 +13,23 @@ $(function() {
 });
 
 $(document).ready(function(){
-  let items = {
-    number: 8,
-  };
-
-  let windowWidth = $(window).width();
-
-  if(windowWidth <= 768 && windowWidth > 420) {
-    items.number = 5;
-  } else if ($(window).width() <= 420) {
-    items.number = 3;
-  }
 
   $(".owl-carousel").owlCarousel({
-    items: items.number,
+    loop: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout:2000,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      420: {
+        items: 5,
+      },
+      768: {
+        items: 8,
+      }
+    }
   });
+
 });
