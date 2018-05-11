@@ -494,6 +494,7 @@ footer .about-us .streamHeader{
   border: none;
   border-bottom: solid 2px #ffea00;
   margin: 0;
+  border-radius: 0;
 }
 
 .follow-us input:focus {

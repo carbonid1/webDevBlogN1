@@ -347,3 +347,9 @@
     font-size: 9px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .card {
+    margin-right: 0;
+  }
+}
